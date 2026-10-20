@@ -29,3 +29,11 @@
 .mini-map .region-shape{stroke-width:.8}.mini-map .region{pointer-events:none}
 @media(max-width:800px){.map-card .map-canvas{margin-top:13px}.map-zoom{right:7px;top:7px}.map-zoom button{width:26px;height:26px;font-size:15px}}
 @media(max-width:600px){.map-card .map-canvas svg{aspect-ratio:720/550}.map-bottom{flex-wrap:wrap;gap:5px}.map-zoom button{width:31px;height:31px}.atlas-summary>span:last-child{max-width:none;white-space:nowrap}}
+/* Match both map panels and keep small unvisited prefectures visible. */
+.map-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.map-card.cn .map-canvas svg,.map-card.jp .map-canvas svg{height:auto;max-height:none;aspect-ratio:720/550}
+.map-card.jp .region-shape{stroke:#a7bba9;stroke-width:.55}
+.map-card.jp .region:hover .region-shape,.map-card.jp .region:focus .region-shape{stroke:#234e43;stroke-width:1.8}
+.map-card .region text{pointer-events:auto;cursor:pointer}
+.map-card .region.dark text.outside-label,.map-card .region text.outside-label{fill:#284f40;stroke:#f8faf5;stroke-width:3}
+@media(max-width:600px){.map-grid{grid-template-columns:1fr}}
