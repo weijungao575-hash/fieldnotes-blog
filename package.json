@@ -1,0 +1,10 @@
+{
+  "name": "fieldnotes-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node --check app.js && node --check github.js && node --test checks.test.js github.test.js",
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1"
+  }
+}

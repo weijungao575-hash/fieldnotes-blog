@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- CONTENT_SECURITY_POLICY -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#174d48">
+  <meta name="description" content="山海之间，一个关于学术、旅行与日常的个人空间。用中日拼图地图收藏走过的地方。">
+  <title>山海之间 · 学术、旅行与日常</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至内容</a>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="山海之间首页"><span class="brand-mark">山</span><span>山海之间<small>FIELDNOTES</small></span></a>
+    <nav aria-label="主导航"><a href="#/" data-nav="home">个人首页</a><a href="#/academic" data-nav="academic">学术主页</a><a href="#/atlas" data-nav="atlas">旅行地图</a><a href="#/essays" data-nav="essays">随笔</a><a href="#/links" data-nav="links">友情链接</a></nav>
+    <a href="#/admin" class="header-write"><span aria-hidden="true">↗</span> 写作后台</a>
+    <button class="menu-toggle" aria-label="展开导航" aria-expanded="false">☰</button>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><a class="footer-brand" href="#/">山海之间 <span>FIELDNOTES</span></a><p>保持好奇，慢慢走，认真记。</p><div><span>GitHub Pages · 个人博客</span><a href="#/plan">关于写作与发布 ↗</a><a href="#/admin">写作后台</a></div></footer>
+  <div id="tooltip" class="map-tooltip" role="tooltip" hidden></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog"></dialog>
+</body>
+</html>
