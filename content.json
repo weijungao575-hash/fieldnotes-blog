@@ -1,7 +1,7 @@
 {
   "formatVersion": 2,
-  "revision": "37b20a9d-8271-4718-ac84-464b50bdf0f0",
-  "updatedAt": "2026-10-20T15:53:13.415Z",
+  "revision": "ebd883cf-0d2a-476b-8f0c-61c3c833a2b8",
+  "updatedAt": "2026-10-20T15:53:54.197Z",
   "visits": {
     "cn-11": "visited",
     "cn-31": "visited",
@@ -11,7 +11,7 @@
     "cn-35": "visited",
     "cn-44": "visited",
     "cn-81": "lived",
-    "cn-51": "visited",
+    "cn-51": "transit",
     "cn-53": "wish",
     "cn-54": "wish",
     "cn-61": "visited",
@@ -31,7 +31,9 @@
     "jp-47": "wish",
     "jp-23": "visited"
   },
-  "colors": {},
+  "colors": {
+    "cn-51": "#b96846"
+  },
   "posts": [
     {
       "id": "kyoto-morning",
@@ -187,5 +189,6 @@
       "status": "published",
       "version": "37b20a9d-8271-4718-ac84-464b50bdf0f0"
     }
-  ]
+  ],
+  "mapRevision": "ebd883cf-0d2a-476b-8f0c-61c3c833a2b8"
 }
