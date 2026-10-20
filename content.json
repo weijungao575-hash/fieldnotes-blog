@@ -1,7 +1,7 @@
 {
   "formatVersion": 2,
-  "revision": "ebd883cf-0d2a-476b-8f0c-61c3c833a2b8",
-  "updatedAt": "2026-10-20T15:53:54.197Z",
+  "revision": "verification-cleanup-2026-10-21",
+  "updatedAt": "2026-10-20T15:54:59.381Z",
   "visits": {
     "cn-11": "visited",
     "cn-31": "visited",
@@ -11,7 +11,7 @@
     "cn-35": "visited",
     "cn-44": "visited",
     "cn-81": "lived",
-    "cn-51": "transit",
+    "cn-51": "visited",
     "cn-53": "wish",
     "cn-54": "wish",
     "cn-61": "visited",
@@ -31,9 +31,7 @@
     "jp-47": "wish",
     "jp-23": "visited"
   },
-  "colors": {
-    "cn-51": "#b96846"
-  },
+  "colors": {},
   "posts": [
     {
       "id": "kyoto-morning",
@@ -168,27 +166,14 @@
         "cn-51"
       ],
       "date": "2026-08-02",
-      "cover": "uploads/943b5d63feecf9b15677022ac87dfadcae0885fb41fb7c94de191657748dace9.jpg",
+      "cover": "assets/lake.svg",
+      "status": "published",
       "body": [
         {
           "type": "p",
-          "html": "演示游记。一杯茶可以喝一个下午。坐在树荫下面，听旁边的人聊天，忽然觉得没安排的行程也很充实。",
           "text": "演示游记。一杯茶可以喝一个下午。坐在树荫下面，听旁边的人聊天，忽然觉得没安排的行程也很充实。"
-        },
-        {
-          "type": "p",
-          "html": "发布验证：这段文字与测试图片通过网页后台提交到 GitHub，验证后恢复。",
-          "text": "发布验证：这段文字与测试图片通过网页后台提交到 GitHub，验证后恢复。"
-        },
-        {
-          "type": "image",
-          "src": "uploads/943b5d63feecf9b15677022ac87dfadcae0885fb41fb7c94de191657748dace9.jpg",
-          "alt": "verification-upload"
         }
-      ],
-      "status": "published",
-      "version": "37b20a9d-8271-4718-ac84-464b50bdf0f0"
+      ]
     }
-  ],
-  "mapRevision": "ebd883cf-0d2a-476b-8f0c-61c3c833a2b8"
+  ]
 }
