@@ -16,7 +16,7 @@ const published=site=>({...structuredClone(site),posts:site.posts.filter(p=>p.st
 
 export class GitHubRepository {
   #token; #fetch; #busy=false;
-  constructor(token,{fetch:fetchImpl=globalThis.fetch}={}){this.#token=token.trim();this.#fetch=fetchImpl;if(!this.#token)throw new GitHubError('请先输入 GitHub 访问令牌');}
+  constructor(token,{fetch:fetchImpl=globalThis.fetch}={}){this.#token=token.trim();this.#fetch=(...args)=>fetchImpl(...args);if(!this.#token)throw new GitHubError('请先输入 GitHub 访问令牌');}
   disconnect(){this.#token='';}
   async request(path,{method='GET',body}={}){
     if(!this.#token)throw new GitHubError('请重新连接 GitHub');

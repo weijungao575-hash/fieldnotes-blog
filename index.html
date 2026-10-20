@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-UkH6S1tiIriW8y0gJfjPt94bOZrIAnc35V0KkrLB2Dg='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fYVk7daMmDZULZkZFrknJJ0zGtBTwvKKlR47QenRFsQ='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#174d48">
   <meta name="description" content="山海之间，一个关于学术、旅行与日常的个人空间。用中日拼图地图收藏走过的地方。">
@@ -156,7 +156,7 @@ const published=site=>({...structuredClone(site),posts:site.posts.filter(p=>p.st
 
 class GitHubRepository {
   #token; #fetch; #busy=false;
-  constructor(token,{fetch:fetchImpl=globalThis.fetch}={}){this.#token=token.trim();this.#fetch=fetchImpl;if(!this.#token)throw new GitHubError('请先输入 GitHub 访问令牌');}
+  constructor(token,{fetch:fetchImpl=globalThis.fetch}={}){this.#token=token.trim();this.#fetch=(...args)=>fetchImpl(...args);if(!this.#token)throw new GitHubError('请先输入 GitHub 访问令牌');}
   disconnect(){this.#token='';}
   async request(path,{method='GET',body}={}){
     if(!this.#token)throw new GitHubError('请重新连接 GitHub');

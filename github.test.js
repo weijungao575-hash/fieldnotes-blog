@@ -46,6 +46,15 @@ const client=server=>new GitHubRepository('dummy-token-only-for-tests',{fetch:se
 
 test('Chinese and emoji round-trip through GitHub base64 blobs',()=>{const text='山海之间 🌿\n京都與東京';assert.equal(base64ToText(textToBase64(text)),text);});
 test('real connection flow checks identity, repository write access and latest content',async()=>{const server=new FakeGitHub();const connected=await client(server).connect();assert.equal(connected.login,GITHUB.owner);assert.equal(connected.snapshot.site.posts.length,seedPosts.length);});
+test('browser fetch is invoked without the repository as its receiver',async()=>{
+  const server=new FakeGitHub();
+  function browserFetch(url,options){
+    if(this!==undefined)throw new TypeError('Illegal invocation');
+    return server.fetch(url,options);
+  }
+  const connected=await new GitHubRepository('dummy-token-only-for-tests',{fetch:browserFetch}).connect();
+  assert.equal(connected.login,GITHUB.owner);
+});
 test('publish writes photo and multi-region article atomically, preserving website and unrelated posts',async()=>{
   const server=new FakeGitHub(),beforePage=server.files()['index.html'];
   const photo='data:image/jpeg;base64,'+btoa('image-binary');const post=newPost();post.cover=photo;post.body.push({type:'image',src:photo,alt:'照片'});
