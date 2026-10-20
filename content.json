@@ -1,7 +1,7 @@
 {
   "formatVersion": 2,
-  "revision": "github-storage-v2",
-  "updatedAt": "2026-10-20T15:26:37.590Z",
+  "revision": "37b20a9d-8271-4718-ac84-464b50bdf0f0",
+  "updatedAt": "2026-10-20T15:53:13.415Z",
   "visits": {
     "cn-11": "visited",
     "cn-31": "visited",
@@ -166,14 +166,26 @@
         "cn-51"
       ],
       "date": "2026-08-02",
-      "cover": "assets/lake.svg",
-      "status": "published",
+      "cover": "uploads/943b5d63feecf9b15677022ac87dfadcae0885fb41fb7c94de191657748dace9.jpg",
       "body": [
         {
           "type": "p",
+          "html": "演示游记。一杯茶可以喝一个下午。坐在树荫下面，听旁边的人聊天，忽然觉得没安排的行程也很充实。",
           "text": "演示游记。一杯茶可以喝一个下午。坐在树荫下面，听旁边的人聊天，忽然觉得没安排的行程也很充实。"
+        },
+        {
+          "type": "p",
+          "html": "发布验证：这段文字与测试图片通过网页后台提交到 GitHub，验证后恢复。",
+          "text": "发布验证：这段文字与测试图片通过网页后台提交到 GitHub，验证后恢复。"
+        },
+        {
+          "type": "image",
+          "src": "uploads/943b5d63feecf9b15677022ac87dfadcae0885fb41fb7c94de191657748dace9.jpg",
+          "alt": "verification-upload"
         }
-      ]
+      ],
+      "status": "published",
+      "version": "37b20a9d-8271-4718-ac84-464b50bdf0f0"
     }
   ]
 }
