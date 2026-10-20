@@ -1,22 +1,22 @@
 {
   "formatVersion": 2,
-  "revision": "verification-cleanup-2026-10-21",
-  "updatedAt": "2026-10-20T15:54:59.381Z",
+  "revision": "298ae524-2b49-4729-bec2-c09b685990d0",
+  "updatedAt": "2026-10-20T16:02:07.685Z",
   "visits": {
     "cn-11": "visited",
     "cn-31": "visited",
     "cn-33": "visited",
     "cn-32": "visited",
-    "cn-34": "transit",
+    "cn-34": "visited",
     "cn-35": "visited",
     "cn-44": "visited",
     "cn-81": "lived",
     "cn-51": "visited",
-    "cn-53": "wish",
-    "cn-54": "wish",
+    "cn-53": "visited",
+    "cn-54": "visited",
     "cn-61": "visited",
     "cn-42": "visited",
-    "cn-37": "visited",
+    "cn-37": "lived",
     "cn-46": "visited",
     "jp-13": "lived",
     "jp-14": "visited",
@@ -29,7 +29,24 @@
     "jp-19": "visited",
     "jp-01": "wish",
     "jp-47": "wish",
-    "jp-23": "visited"
+    "jp-23": "visited",
+    "cn-63": "visited",
+    "cn-15": "visited",
+    "cn-23": "visited",
+    "cn-21": "visited",
+    "cn-14": "visited",
+    "cn-43": "visited",
+    "cn-52": "visited",
+    "cn-45": "visited",
+    "cn-62": "visited",
+    "cn-64": "transit",
+    "cn-22": "visited",
+    "cn-13": "visited",
+    "cn-12": "visited",
+    "cn-41": "visited",
+    "cn-50": "visited",
+    "cn-36": "visited",
+    "cn-82": "visited"
   },
   "colors": {},
   "posts": [
@@ -175,5 +192,6 @@
         }
       ]
     }
-  ]
+  ],
+  "mapRevision": "298ae524-2b49-4729-bec2-c09b685990d0"
 }
